@@ -14,7 +14,6 @@ integer i;
 
 true_dual_port_ram DUT(data_a,addr_a,we_a,q_a,data_b,addr_b,we_b,q_b,clk);
 
-
 always
    begin
      #(clock/2) clk = 1'b0;
@@ -82,8 +81,6 @@ begin
 
  #(clock - thold - tsetup);
 end
-
-
 endtask
 
     
@@ -143,7 +140,7 @@ begin
    end
 endtask
          
- 
+// Generating stimulus
 initial begin
  datain_1_test(8'd34);
  datain_2_test(8'd59);
@@ -153,29 +150,7 @@ initial begin
  write_enb_2_test(1'b1);
 end
 
-/*
-task test;
-begin
-    for(i=0;i<5;i=i+1) begin
-      @(negedge clk);
-        addr_a  = $urandom_range(2,18);
-        addr_b  = $urandom_range(20,45);
-        data_a = $urandom;
-        data_b = $urandom;
-     end
-end
-endtask
 
-
-initial begin
-    {we_a,we_b} = 2'b00;
-    test();
-    #200;
-    {we_a,we_b} = 2'b11;
-    test();
-end
-
-*/
 initial #900 $finish;
 
 

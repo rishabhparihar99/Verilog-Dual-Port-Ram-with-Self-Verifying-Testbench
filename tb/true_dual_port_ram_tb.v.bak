@@ -121,6 +121,7 @@ begin
    $display("write enable 1 working");
    {we_a,w} = 2'bx;
    {addr_a,data_a} = 14'dx;
+     #(clock - thold - tsetup);
    end
 endtask
 
@@ -138,6 +139,7 @@ begin
    $display("write enable 2 working");
    {we_b,w} = 2'bx;
    {addr_b,data_b} = 14'dx;
+     #(clock - thold - tsetup);
    end
 endtask
          

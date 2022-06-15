@@ -9,7 +9,7 @@ z2
 cModel Technology
 dS:/Maven/VERILOG/Assignments BRN23/Design Assignments/Counter_design/sim
 vtrue_dual_port_ram
-Z0 !s110 1655322497
+Z0 !s110 1655323661
 !i10b 1
 !s100 6mi5aa]7W7c]nRE`:aMf63
 I7TW?mOlY2c9Y^<gj<E9mF1
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1655322497.000000
+Z4 !s108 1655323661.000000
 !s107 S:/Maven/VERILOG/Assignments BRN23/Design Assignments/true_dual_port_ram/rtl/true_dual_port_ram.v|
 !s90 -reportprogress|300|-work|work|-stats=none|S:/Maven/VERILOG/Assignments BRN23/Design Assignments/true_dual_port_ram/rtl/true_dual_port_ram.v|
 !i113 1
@@ -32,11 +32,11 @@ Z6 tCvgOpt 0
 vtrue_dual_port_ram_tb
 R0
 !i10b 1
-!s100 i^zo4]obV60JboaEaVXKF2
-IZg4e^W60dUnCoBe?hjOQ@2
+!s100 @14K4d[SN;^429;WgBiLS1
+I>?2YC9[N?5F0Ic=CFieEC1
 R1
 R2
-w1655322494
+w1655323652
 8S:/Maven/VERILOG/Assignments BRN23/Design Assignments/true_dual_port_ram/tb/true_dual_port_ram_tb.v
 FS:/Maven/VERILOG/Assignments BRN23/Design Assignments/true_dual_port_ram/tb/true_dual_port_ram_tb.v
 L0 1
