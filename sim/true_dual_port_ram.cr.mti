@@ -5,4 +5,11 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	true_dual_port_ram
 
+} {} {}} {S:/Maven/VERILOG/Assignments BRN23/Design Assignments/true_dual_port_ram/tb/true_dual_port_ram_tb.v} {1 {vlog -work work -stats=none {S:\Maven\VERILOG\Assignments BRN23\Design Assignments\true_dual_port_ram\tb\true_dual_port_ram_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module true_dual_port_ram_tb
+
+Top level modules:
+	true_dual_port_ram_tb
+
 } {} {}}

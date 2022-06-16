@@ -11,7 +11,6 @@ module true_dual_port_ram_tb();
            tsetup = 5;
  
 integer i;
-
 true_dual_port_ram DUT(data_a,addr_a,we_a,q_a,data_b,addr_b,we_b,q_b,clk);
 
 always
@@ -32,6 +31,7 @@ begin
          if(q_a !== data_a && (DUT.ram[addr_a] == data_a)) begin
               $display("dataport_1 is not working fine");
                $display("Error at time %t",$time);
+               $stop;
           end
     $display("dataport_1 is working fine");
     {data_a,data_bus} <= 16'bx;
@@ -53,6 +53,7 @@ begin
          if(q_b !== data_b && (DUT.ram[addr_b] == data_b)) begin
               $display("dataport_2 is not working fine");
                $display("Error at time %t",$time);
+               $stop;
           end
     $display("dataport_2 is working fine");
     {data_b,data_bus} <= 16'bx;
@@ -73,6 +74,7 @@ begin
         if(DUT.ram[bus[5:0]] !== data_a) begin
              $display("AddressBus1 is not working fine");
              $display("Error at time %t",$time);
+             $stop;
          end
     $display("Address1 is working fine");
     {addr_a,bus} = 12'dx;
@@ -94,6 +96,7 @@ begin
         if(DUT.ram[bus[5:0]] !== data_b) begin
              $display("AddressBus2 is not working fine");
              $display("Error at time %t",$time);
+             $stop;
          end
     $display("Address2 is working fine");
     {addr_b,bus} = 12'dx;
@@ -114,6 +117,7 @@ begin
      if(q_a !== data_a) begin
              $display("Write enable 1 not working");
              $display("Error at %0t",$time);
+             $stop;
          end
    $display("write enable 1 working");
    {we_a,w} = 2'bx;
@@ -132,6 +136,7 @@ begin
      if(q_b !== data_b) begin
              $display("Write enable 2 not working");
              $display("Error at %0t",$time);
+             $stop;
          end
    $display("write enable 2 working");
    {we_b,w} = 2'bx;
